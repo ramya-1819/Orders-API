@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CO_DBModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="PNo" />
+    </Key>
+    <Property Name="PNo" Type="Int32" Nullable="false" />
+    <Property Name="CustNo" Type="Int32" />
+    <Property Name="OrderDate" Type="DateTime" Precision="0" />
+    <Property Name="ShipDate" Type="DateTime" Precision="0" />
+    <Property Name="ToCity" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="items" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="orderdescription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="CO_DBEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+  </EntityContainer>
+</Schema>

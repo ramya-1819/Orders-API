@@ -19,6 +19,8 @@
     <Property Name="OrderDate" Type="date" />
     <Property Name="ShipDate" Type="date" />
     <Property Name="ToCity" Type="varchar" MaxLength="20" />
+    <Property Name="Items" Type="nvarchar" MaxLength="50" />
+    <Property Name="OrderDescription" Type="nvarchar" MaxLength="100" />
   </EntityType>
   <Association Name="FK__Orders__CustNo__267ABA7A">
     <End Role="Customers" Type="Self.Customers" Multiplicity="0..1" />

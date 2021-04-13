@@ -179,7 +179,23 @@
     </Compile>
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="CO_DB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CO_DB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO_DB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CO_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CO.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Customer.cs">
       <DependentUpon>COModel.tt</DependentUpon>
     </Compile>
@@ -188,6 +204,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CustomerModel.cs" />
+    <Compile Include="Models\Orders.cs" />
     <Compile Include="Order.cs">
       <DependentUpon>COModel.tt</DependentUpon>
     </Compile>
@@ -209,6 +226,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="CO_DB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CO.edmx</DependentUpon>
+      <LastGenOutput>CO_DB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CO_DB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CO.edmx</DependentUpon>
+      <LastGenOutput>CO_DB.cs</LastGenOutput>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -239,6 +266,13 @@
     </EntityDeploy>
     <Content Include="COModel.edmx.diagram">
       <DependentUpon>COModel.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="CO.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CO.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="CO.edmx.diagram">
+      <DependentUpon>CO.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

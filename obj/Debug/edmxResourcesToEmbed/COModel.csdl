@@ -21,6 +21,8 @@
     <Property Name="ShipDate" Type="DateTime" Precision="0" />
     <Property Name="ToCity" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Customer" Relationship="Self.FK__Orders__CustNo__267ABA7A" FromRole="Orders" ToRole="Customers" />
+    <Property Name="Items" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OrderDescription" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK__Orders__CustNo__267ABA7A">
     <End Role="Customers" Type="Self.Customer" Multiplicity="0..1" />

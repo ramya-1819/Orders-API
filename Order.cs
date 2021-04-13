@@ -19,6 +19,8 @@ namespace projectAPI
         public Nullable<System.DateTime> OrderDate { get; set; }
         public Nullable<System.DateTime> ShipDate { get; set; }
         public string ToCity { get; set; }
+        public string Items { get; set; }
+        public string OrderDescription { get; set; }
     
         public virtual Customer Customer { get; set; }
     }
