@@ -180,6 +180,7 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\SP_CUSTOMERController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="CO_DB.Context.cs">
       <AutoGen>True</AutoGen>
@@ -297,6 +298,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\SP_CUSTOMER\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
